@@ -142,4 +142,37 @@ header{
 
 body{
     background-color: #dcdcdc;
+    background-image: url("imagenes/Portada.png");
+    background-size: cover;
+}
+.referencia{
+    margin-top: 16%;
+    width: 500px;
+    height: 600px;
+    float: left;
+}
+#parrafo{
+    text-align: flex;
+    margin-top: 12%;
+    color: antiquewhite;
+}
+#parrafo2{
+    text-align: flex;
+    margin-top: 3%;
+    color: antiquewhite;
+}
+#parrafo3{
+    text-align: left;
+    margin-top: 1%;
+    color: antiquewhite;
+}
+#texto{
+    margin: 1%;
+    text-align: center;
+    color: antiquewhite;
+}
+#texto2{
+    margin: 1%;
+    text-align: center;
+    color: antiquewhite;
 }
