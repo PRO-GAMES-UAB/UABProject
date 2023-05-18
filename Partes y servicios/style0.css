@@ -40,7 +40,7 @@ header{
     display: flex;
     justify-content: center;
     background-color: white;
-    width: 800px;
+    width: 080px;
     margin-top: 40px;
     border-radius: 25px;
     margin-left: 300px;
@@ -144,6 +144,7 @@ body{
     background-color: #dcdcdc;
 }
 
+<<<<<<< HEAD:style.css
 #referencia{
     margin-top: 15%;
     margin-left: 20%;
@@ -171,3 +172,6 @@ margin-left: 15px;
 #txt-h1{
     margin-right: 70%;
 }
+=======
+
+>>>>>>> master:Partes y servicios/style0.css
