@@ -175,6 +175,48 @@ background-color: rgb(255, 255, 255);
     background-color:#1c1c1c;
 }
 
-.lista__menu-desplegable a:hover{
-    color: rgb(255, 255, 255);
+.descripcion-juego{
+    margin-top: 3vw;
+    width: 30vw;
+    height: 35vw;
+    margin-right: 2vw;
+    background-color: rgba(116, 115, 115, 0.3);
+}
+
+.imagen-desc-logo{
+    width: 30vw;
+    height: 10vw;
+    object-fit: inherit;
+}
+
+.titulos-descripcion{
+    margin-top: 1vw;
+    margin-left: 2vw;
+}
+
+.texto-juego{
+    font-size: 1vw;
+    margin-top: 1vw;
+    margin-left: 2vw;
+    width: 25.9vw;
+}
+
+.contenedor-botones{
+    margin-left: 2vw;
+}
+
+.botones-cat{
+    width: 5vw;
+    height: 2vw;
+    margin-top: 1vw;
+    margin-right: 1vw;
+    background-color: darkgray;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.botones-cat:hover{
+    background-color: rgba(106, 105, 105, 0.3);
+
 }
