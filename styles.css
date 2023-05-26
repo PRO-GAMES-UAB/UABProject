@@ -4,6 +4,11 @@
     font-family: 'Poppins', sans-serif;
 }
 
+body{
+    background-color: rgba(199, 197, 197, 0.3);
+
+}
+
 header{
     display: flex;
     position: fixed;
@@ -96,7 +101,7 @@ background-color: rgb(255, 255, 255);
     width: 3%;
     height: 35%;
     margin-top: 2.2vw;
-    margin-left: 2vw;
+    margin-left: 3.2vw;
     cursor: pointer;
 }
 
@@ -121,4 +126,87 @@ background-color: rgb(255, 255, 255);
 
 .activeline3__bars-menu{
     transform: rotate(-45deg) translate(-2px, 0.5px);
+}
+
+/*esto es para la parte de la descripcion de los juegos*/
+
+.padre-dec-juego{
+    display: flex;
+    margin-top: 8vw;
+    width: 100%;
+}
+
+.plantilla-juego{
+    width: 65vw;
+    height: 40vw;
+}
+
+
+.img-juegos{
+    margin-top: 3vw;
+    margin-left: 2vw;
+    width: 44vw;
+    height: 35vw;
+    background-size:contain;
+
+}
+
+#pasar-img{
+    width: 5vw;
+    margin-bottom: 15vw;
+    margin-left: 2vw;
+    cursor: pointer;
+}
+
+#retroceder-img{
+    margin-left: 3vw;
+    margin-bottom: 15vw;
+    width: 5vw;
+    cursor: pointer;
+}
+
+.descripcion-juego{
+    margin-top: 3vw;
+    width: 30vw;
+    height: 35vw;
+    margin-right: 2vw;
+    background-color: rgba(116, 115, 115, 0.3);
+}
+
+.imagen-desc-logo{
+    width: 30vw;
+    height: 10vw;
+    object-fit: inherit;
+}
+
+.titulos-descripcion{
+    margin-top: 1vw;
+    margin-left: 2vw;
+}
+
+.texto-juego{
+    font-size: 1vw;
+    margin-top: 1vw;
+    margin-left: 2vw;
+    width: 26vw;
+}
+
+.contenedor-botones{
+    margin-left: 2vw;
+}
+
+.botones-cat{
+    width: 5vw;
+    height: 2vw;
+    margin-top: 1vw;
+    margin-right: 1vw;
+    background-color: darkgray;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.botones-cat:hover{
+    background-color: rgba(106, 105, 105, 0.3);
+
 }
