@@ -17,6 +17,7 @@ header{
     width: 100%;
     height: 17%;
     box-shadow: 0px 10px 10px 0px rgb(0,0,0,0.3);
+    z-index: 100;
 }
 /*logo, titulo*/
 .logo{
@@ -128,6 +129,54 @@ background-color: rgb(255, 255, 255);
     transform: rotate(-45deg) translate(-2px, 0.5px);
 }
 
+.menu__desplegable{
+    position: absolute;
+    top: 0;
+    width: 17%;
+    height: 100%;
+}
+
+.menu__desplegable-nav{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1c1c1c;
+    padding: 6.5rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    text-align: center;
+    display: flex;
+    transition: all 300ms;
+    position: fixed;
+}
+
+.menu__desplegable-nav.visible{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.lista__menu-desplegable{
+    flex-direction: column;
+    align-items: end;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.lista__menu-desplegable a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.3vw;
+}
+
+
+.lista__menu-desplegable li:hover{
+    transform: scale(1.1);
+    background-color:#1c1c1c;
+}
+
 /*esto es para la parte de la descripcion de los juegos*/
 
 .padre-dec-juego{
@@ -199,7 +248,7 @@ background-color: rgb(255, 255, 255);
     width: 5vw;
     height: 2vw;
     margin-top: 1vw;
-    margin-right: 1vw;
+    margin-right: 0.5vw;
     background-color: darkgray;
     border: none;
     border-radius: 3px;
@@ -207,6 +256,156 @@ background-color: rgb(255, 255, 255);
 }
 
 .botones-cat:hover{
-    background-color: rgba(106, 105, 105, 0.3);
+    background-color: rgba(54, 53, 53, 0.3);
+}
 
+/*esta parte es de la informacion y descripcion del juego*/
+
+.padre-informacion-juego{
+    display: flex;
+}
+
+.cont-req{
+    display: flex;
+}
+
+.icon-req{
+    width: 2.5vw;
+    margin-top: 0.5vw;
+    margin-right: 0.5vw;
+}
+
+.informacion-juego{
+    margin-top: 2vw;
+    margin-left: 6vw;
+}
+
+.texto-informacion{
+    margin-top: 1vw;
+    width: 55vw;
+    font-size: 1vw;
+}
+
+.subtitulos-informacion{
+    margin-top: 1.5vw;
+    margin-bottom: 1vw;
+}
+
+.titulos-informacion-juego{
+    margin-top: 1vw;
+}
+
+.req-juegos{
+    font-size: 1vw;
+    margin-top: 0.1vw;
+    width: 55vw;
+}
+
+hr{
+    width: 60vw;
+    margin-left: 4vw;
+}
+
+/*esta parte es de la compra y reseña del juego*/
+
+.cont-padre-compra{
+    display: block;
+}
+
+.cont-precio-juego{
+    display: flex;
+}
+
+.compra-juego{
+    background-color: rgba(116, 115, 115, 0.3);
+    margin-left: 4vw;
+    margin-top: 2vw;
+    width: 30vw;
+    height: 10vw;
+}
+
+.titulo-compra{
+    margin-top: 2vw;
+    margin-left: 2vw;
+    text-align: center;
+}
+
+#precio-juego{
+    margin-top: 2vw;
+    margin-left: 2vw;
+}
+
+.boton-carrito{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.3vw;
+    margin-left: 1vw;
+    width: 4vw;
+    height: 3vw;
+    background-color: darkgray;
+    border-radius: 0.5vw;
+}
+
+.boton-carrito:hover{
+    background-color: rgba(54, 53, 53, 0.3);
+    cursor: pointer;
+}
+
+.boton-compra{
+    margin-top: 1.3vw;
+    margin-left: 1vw;
+    width: 10vw;
+    height: 3vw ;
+    background-color: darkgray;
+    border: none;
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+.boton-compra:hover{
+    background-color: rgba(54, 53, 53, 0.3);
+    cursor: pointer;
+}
+
+.cont-reseñas{
+    margin-top: 3vw;
+    margin-left: 4vw;
+    background-color: rgba(116, 115, 115, 0.3) ;
+    width: 30vw;
+    height: 31vw;
+}
+
+.titulo-reseña{
+    margin-top: 1vw;
+    margin-left: 2vw;
+    position: absolute;
+}
+
+.input-reseña{
+    margin-top: 27vw;
+    margin-left: 4vw;
+    padding: 0.7vw 6vw;
+    background-color:rgba(54, 53, 53, 0.3) ;
+    border: none;
+    border-radius: 1vw;
+    outline: none;
+    color: black;
+    font-size: 1vw;
+}
+
+.espacio-comentario{
+    background-color:rgba(54, 53, 53, 0.3);
+    width: 27vw;
+    border-radius: 1vw;
+    height: 22vw;
+    margin-left: 1.6vw;
+    margin-top: 4vw;
+    position: absolute;
+}
+
+.icon-user2{
+    margin-top: 27.2vw;
+    margin-left: 1.5vw;
+    width: 2.5vw;
+    position: absolute;
 }
