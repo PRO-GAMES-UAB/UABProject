@@ -40,7 +40,7 @@ header{
     display: flex;
     justify-content: center;
     background-color: white;
-    width: 800px;
+    width: 080px;
     margin-top: 40px;
     border-radius: 25px;
     margin-left: 300px;
@@ -142,6 +142,7 @@ header{
 
 body{
     background-color: #dcdcdc;
+<<<<<<< HEAD:style.css
     background-image: url("imagenes/Portada.png");
     background-size: cover;
 }
@@ -177,3 +178,8 @@ body{
     text-align: center;
     color: antiquewhite;
 }
+=======
+}
+
+
+>>>>>>> master:Partes y servicios/style0.css
