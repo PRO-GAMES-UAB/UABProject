@@ -73,12 +73,12 @@ slider2.insertAdjacentElement('afterbegin', slider__sectionLast2);
 
 function slider__next2(){
     let slider__sectionFirst2 = document.querySelectorAll(".slider__section2")[0];
-    slider2.style.marginLeft2 = "-224.9%";
-    slider2.style.transition2 = "all 0.5s";
+    slider2.style.marginLeft = "-224.9%";
+    slider2.style.transition = "all 0.5s";
     setTimeout(function(){
         slider2.style.transition = "none";
         slider2.insertAdjacentElement('beforeend', slider__sectionFirst2)
-        slider2.style.marginLeft2 = "-112.4%";  
+        slider2.style.marginLeft = "-112.4%";  
     }, 500);
 }
 
@@ -89,12 +89,12 @@ slider__botonRight2.addEventListener('click', function(){
 function slider__prev2(){
     let slider__section2 = document.querySelectorAll(".slider__section2");
     let slider__sectionLast2 = slider__section2[slider__section2.length-1];
-    slider2.style.marginLeft2 = "0";
+    slider2.style.marginLeft = "0";
     slider2.style.transition = "all 0.5s";
     setTimeout(function(){
         slider2.style.transition = "none";
         slider2.insertAdjacentElement('afterbegin', slider__sectionLast2);
-        slider2.style.marginLeft2 = "-112.4%";      
+        slider2.style.marginLeft = "-112.4%";      
     }, 500);
 }
 
