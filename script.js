@@ -18,6 +18,8 @@ bars__menu.addEventListener("click", () => {
     menu__desplegable.classList.toggle("visible");
 })
 
+//slider
+
 const slider = document.querySelector("#slider");
 let slider__section = document.querySelectorAll(".slider__section");
 let slider__sectionLast = slider__section[slider__section.length-1];
@@ -58,6 +60,47 @@ slider__botonLeft.addEventListener('click', function(){
     slider__prev();
 });
 
+//slider 2
+
+const slider2 = document.querySelector("#slider2");
+let slider__section2 = document.querySelectorAll(".slider__section2");
+let slider__sectionLast2 = slider__section2[slider__section2.length-1];
+
+const slider__botonLeft2 = document.querySelector("#slider__btn-left2");
+const slider__botonRight2 = document.querySelector("#slider__btn-right2");
+
+slider2.insertAdjacentElement('afterbegin', slider__sectionLast2);
+
+function slider__next2(){
+    let slider__sectionFirst2 = document.querySelectorAll(".slider__section2")[0];
+    slider2.style.marginLeft2 = "-224.9%";
+    slider2.style.transition2 = "all 0.5s";
+    setTimeout(function(){
+        slider2.style.transition = "none";
+        slider2.insertAdjacentElement('beforeend', slider__sectionFirst2)
+        slider2.style.marginLeft2 = "-112.4%";  
+    }, 500);
+}
+
+slider__botonRight2.addEventListener('click', function(){
+    slider__next2();
+});
+
+function slider__prev2(){
+    let slider__section2 = document.querySelectorAll(".slider__section2");
+    let slider__sectionLast2 = slider__section2[slider__section2.length-1];
+    slider2.style.marginLeft2 = "0";
+    slider2.style.transition = "all 0.5s";
+    setTimeout(function(){
+        slider2.style.transition = "none";
+        slider2.insertAdjacentElement('afterbegin', slider__sectionLast2);
+        slider2.style.marginLeft2 = "-112.4%";      
+    }, 500);
+}
+
+slider__botonLeft2.addEventListener('click', function(){
+    slider__prev2();
+});
 
 
 
