@@ -6,7 +6,6 @@
 
 body{
     background-color: rgba(199, 197, 197, 0.3);
-
 }
 
 header{
@@ -37,25 +36,6 @@ header{
 #titulo-logo-a:link{
     text-decoration: none;
 }
-/*fin logo, titulo*/
-
-/*input, links*/
-/*#padre{
-    background-color: white;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.busqueda{
-    background-color: white;
-    width: 70%;
-    border-color: #666;
-    display: flex;
-    justify-content: center;
-
-}*/
 
 .input{
  justify-content: center;
@@ -679,4 +659,85 @@ hr{
     margin-left: 1.5vw;
     width: 2.5vw;
     position: absolute;
+}
+
+/*esta parte es de categoria*/
+
+.container{
+    margin-top: 8vw;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.cont-cat{
+    position: fixed;
+    background-color: white;
+    width: 23vw;
+    height: 30vw;
+    margin-top: 4.5vw;
+    margin-left: 4vw;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, .5);
+    border-radius: 1vw;
+}
+
+.cat{
+    background-color: white;
+    height: 4.5vw;
+    width: 23vw;
+    display: flex;
+    margin-bottom: 1vw;
+    border-radius: 1vw;
+}
+
+#img-cat-esp{
+    width: 3vw;
+    margin-left: 5vw;
+}
+
+#titulo-cat{
+    margin-bottom: 1vw;
+    margin-top: 1vw;
+    margin-left: 1vw;
+}
+
+.cat:hover{
+    transform: scale(1.1);
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, .5);
+    cursor: pointer;
+    background-color:rgb(201, 197, 197);
+}
+
+.img-cat{
+    width: 3vw;
+    margin-left: 5vw;
+}
+
+.nom-cat{
+    margin-top: 1.5vw;
+    margin-left: 1vw;
+    color: #666666;
+}
+
+.cont-juegos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 40vw;
+    margin-top: 4.5vw;
+    margin-left: 29vw;
+}
+
+.img-juegos-2{
+    width: 20vw;
+    height: 30vw;
+    cursor: pointer;
+}
+
+.juegos{
+    width: 22vw;
+    margin-left: 1vw;
+}
+
+.titulos-juegos{
+    margin-top: 1vw;
 }
