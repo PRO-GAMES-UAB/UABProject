@@ -198,6 +198,7 @@ background-color: rgb(255, 255, 255);
     width: 44vw;
     height: 35vw;
     background-size:contain;
+    object-fit: cover;
 
 }
 
