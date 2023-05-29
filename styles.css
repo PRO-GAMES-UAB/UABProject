@@ -1,0 +1,516 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: rgba(199, 197, 197, 0.3);
+
+}
+
+header{
+    display: flex;
+    position: fixed;
+    top: 0;
+    background-color: white;
+    width: 100%;
+    height: 17%;
+    box-shadow: 0px 10px 10px 0px rgb(0,0,0,0.3);
+    z-index: 100;
+}
+/*logo, titulo*/
+.logo{
+    display: flex;
+}
+
+#icono-logo{
+    width: 7vw;
+}
+#titulo-logo{
+    font-size: 2,5vw;
+    margin-top: 2.7vw;
+}
+/*fin logo, titulo*/
+
+/*input, links*/
+/*#padre{
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.busqueda{
+    background-color: white;
+    width: 70%;
+    border-color: #666;
+    display: flex;
+    justify-content: center;
+
+}*/
+
+.input{
+ justify-content: center;
+ display: flex;
+ margin-top: 2.8vw;
+background-color: rgb(255, 255, 255);
+ width: 55%;
+ height: 35%;
+ border-radius: 7%;
+ border-color: #666;
+ 
+}
+
+#input-header{
+    padding: 0% 33%;
+    overflow: none;
+    border-radius: 10px;
+    border: 3% solid gray;
+    margin-bottom:0;
+    
+}
+
+#icon-input{
+    position: absolute;
+    display: block;
+    margin-top: 0.7vw;
+    margin-left: 43vw;
+    cursor: pointer;
+
+}
+
+.logos-header{
+    width: 4vw;
+    margin-left: 2vw;
+    margin-bottom: 0.1vw;
+    margin-right: 2vw;
+    cursor: pointer;
+    
+}
+
+/*#expandir{
+
+    margin-top: 1%;
+    width: 4vw;
+    margin-left: 2.5%;
+    margin-bottom: 0.7%;
+}*/
+
+.bars__menu{
+    width: 3%;
+    height: 35%;
+    margin-top: 2.2vw;
+    margin-left: 3.2vw;
+    cursor: pointer;
+}
+
+.bars__menu span {
+    display: block;
+    width: 100%;
+    height: 8%;
+    margin-top: 0.8vw;
+    background-color: black;
+    transition: all 300ms;
+    transform-origin: 0px 100%;
+}
+
+.activeline1__bars-menu{
+    transform: rotate(45deg) translate(-2px, 1px);
+}
+
+.activeline2__bars-menu{
+    opacity: 0;
+    margin-left: -30%;
+}
+
+.activeline3__bars-menu{
+    transform: rotate(-45deg) translate(-2px, 0.5px);
+}
+
+.menu__desplegable{
+    position: absolute;
+    top: 0;
+    width: 17%;
+    height: 100%;
+}
+
+.menu__desplegable-nav{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #1c1c1c;
+    padding: 6.5rem;
+   /* box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);*/
+    text-align: center;
+    display: flex;
+    transition: all 300ms;
+    position: fixed;
+    z-index: 100;
+}
+
+.menu__desplegable-nav.visible{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.lista__menu-desplegable{
+    flex-direction: column;
+    align-items: end;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.lista__menu-desplegable a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1.3vw;
+}
+
+
+.lista__menu-desplegable li:hover{
+    transform: scale(1.1);
+    background-color:#1c1c1c;
+}
+
+/*esto es para la parte de la descripcion de los juegos*/
+
+.padre-dec-juego{
+    display: flex;
+    margin-top: 8vw;
+    width: 100%;
+}
+
+.plantilla-juego{
+    width: 65vw;
+    height: 40vw;
+}
+
+
+.img-juegos{
+    margin-top: 3vw;
+    margin-left: 2vw;
+    width: 44vw;
+    height: 35vw;
+    background-size:contain;
+
+}
+
+#pasar-img{
+    width: 5vw;
+    margin-bottom: 15vw;
+    margin-left: 2vw;
+    cursor: pointer;
+}
+
+#retroceder-img{
+    margin-left: 3vw;
+    margin-bottom: 15vw;
+    width: 5vw;
+    cursor: pointer;
+}
+
+.descripcion-juego{
+    margin-top: 3vw;
+    width: 30vw;
+    height: 35vw;
+    margin-right: 2vw;
+    background-color: rgba(116, 115, 115, 0.3);
+}
+
+.imagen-desc-logo{
+    width: 30vw;
+    height: 10vw;
+    object-fit: inherit;
+}
+
+.titulos-descripcion{
+    margin-top: 1vw;
+    margin-left: 2vw;
+}
+
+.texto-juego{
+    font-size: 1vw;
+    margin-top: 1vw;
+    margin-left: 2vw;
+    width: 25.9vw;
+}
+
+.contenedor-botones{
+    margin-left: 2vw;
+}
+
+.botones-cat{
+    width: 5vw;
+    height: 2vw;
+    margin-top: 1vw;
+    margin-right: 0.5vw;
+    background-color: darkgray;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.botones-cat:hover{
+    background-color: rgba(54, 53, 53, 0.3);
+}
+
+
+/* Pagina Principal*/
+
+.cabecera{
+    display: flex;
+    margin-top: 8vw;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.padre__principal{
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    
+    
+}
+#titulo__img-cabecera{
+    font-size: 4vw;
+    text-align: center;
+
+}
+
+
+.imagenes__cabecera{
+    height: 30%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.img_cabecera{
+    display: flex;
+    width: 700px;
+    height: 430px;
+    
+}
+
+.img_cabecera a img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.img_cabecera a img:hover{    
+    cursor:pointer;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+
+#user__login{
+    display: block;
+    margin: auto;
+    padding: 2vw;
+    background-color: rgb(255, 38, 27);
+    width: 20vw;
+    height: 28vw;
+    border-radius: 25px;
+    border-color:black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    margin-top: 5%;
+    border-style:groove;
+    border: 2.5%;
+} 
+
+#user__login-logo{
+    width: 4.5vw;
+}
+
+#body__login{
+background-image: url("https://wallpaperaccess.com/full/8406764.gif");
+background-size: 100%;
+}
+
+a:link{
+
+    color: black;
+}
+
+#contra__ol{
+    font-size: .9vw;
+}
+
+.login__input{
+    border-radius: 4%;
+    padding: .4vw 2.8vw;
+}
+
+#boton__login{
+    border: 2%;
+    border-radius: 10%;
+    width: 5vw;
+    border-style:dashed;
+    cursor: pointer;
+}
+
+
+/*esta parte es de la informacion y descripcion del juego*/
+
+.padre-informacion-juego{
+    display: flex;
+}
+
+.cont-req{
+    display: flex;
+}
+
+.icon-req{
+    width: 2.5vw;
+    margin-top: 0.5vw;
+    margin-right: 0.5vw;
+}
+
+.informacion-juego{
+    margin-top: 2vw;
+    margin-left: 6vw;
+}
+
+.texto-informacion{
+    margin-top: 1vw;
+    width: 55vw;
+    font-size: 1vw;
+}
+
+.subtitulos-informacion{
+    margin-top: 1.5vw;
+    margin-bottom: 1vw;
+}
+
+.titulos-informacion-juego{
+    margin-top: 1vw;
+}
+
+.req-juegos{
+    font-size: 1vw;
+    margin-top: 0.1vw;
+    width: 55vw;
+}
+
+hr{
+    width: 60vw;
+    margin-left: 4vw;
+}
+
+/*esta parte es de la compra y reseña del juego*/
+
+.cont-padre-compra{
+    display: block;
+}
+
+.cont-precio-juego{
+    display: flex;
+}
+
+.compra-juego{
+    background-color: rgba(116, 115, 115, 0.3);
+    margin-left: 4vw;
+    margin-top: 2vw;
+    width: 30vw;
+    height: 10vw;
+}
+
+.titulo-compra{
+    margin-top: 2vw;
+    margin-left: 2vw;
+    text-align: center;
+}
+
+#precio-juego{
+    margin-top: 2vw;
+    margin-left: 2vw;
+}
+
+.boton-carrito{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.3vw;
+    margin-left: 1vw;
+    width: 4vw;
+    height: 3vw;
+    background-color: darkgray;
+    border-radius: 0.5vw;
+}
+
+.boton-carrito:hover{
+    background-color: rgba(54, 53, 53, 0.3);
+    cursor: pointer;
+}
+
+.boton-compra{
+    margin-top: 1.3vw;
+    margin-left: 1vw;
+    width: 10vw;
+    height: 3vw ;
+    background-color: darkgray;
+    border: none;
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+.boton-compra:hover{
+    background-color: rgba(54, 53, 53, 0.3);
+    cursor: pointer;
+}
+
+.cont-reseñas{
+    margin-top: 3vw;
+    margin-left: 4vw;
+    background-color: rgba(116, 115, 115, 0.3) ;
+    width: 30vw;
+    height: 31vw;
+}
+
+.titulo-reseña{
+    margin-top: 1vw;
+    margin-left: 2vw;
+    position: absolute;
+}
+
+.input-reseña{
+    margin-top: 27vw;
+    margin-left: 4vw;
+    padding: 0.7vw 6vw;
+    background-color:rgba(54, 53, 53, 0.3) ;
+    border: none;
+    border-radius: 1vw;
+    outline: none;
+    color: black;
+    font-size: 1vw;
+}
+
+.espacio-comentario{
+    background-color:rgba(54, 53, 53, 0.3);
+    width: 27vw;
+    border-radius: 1vw;
+    height: 22vw;
+    margin-left: 1.6vw;
+    margin-top: 4vw;
+    position: absolute;
+}
+
+.icon-user2{
+    margin-top: 27.2vw;
+    margin-left: 1.5vw;
+    width: 2.5vw;
+    position: absolute;
+}
