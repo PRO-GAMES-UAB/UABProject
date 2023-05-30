@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
 }
 
 body{
@@ -185,7 +186,7 @@ background-color: rgb(255, 255, 255);
     width: 44vw;
     height: 35vw;
     background-size:contain;
-    object-fit: cover;
+    /*object-fit: cover;*/
 
 }
 
@@ -253,7 +254,7 @@ background-color: rgb(255, 255, 255);
 
 .cabecera{
     display: flex;
-    margin-top: 8vw;
+    margin-top: 3.5vw;
     width: 100%;
     height: 100%;
     position: relative;
@@ -282,9 +283,8 @@ background-color: rgb(255, 255, 255);
 
 .img_cabecera{
     display: flex;
-    width: 700px;
-    height: 430px;
-    
+    width: 850px;
+    height: 530px;  
 }
 
 .img_cabecera a img{
@@ -297,7 +297,7 @@ background-color: rgb(255, 255, 255);
 
 .img_cabecera a img:hover{    
     cursor:pointer;
-    width: 300px;
+    width: 400px;
     opacity: 1;
     filter: contrast(120%);
 }
@@ -355,8 +355,9 @@ background-color: rgb(255, 255, 255);
     border-radius: 1vw;  
     display:block;
     object-fit: cover;
-    margin-left: 2.73vw;
-    margin-right: 2.73vw; 
+    margin-left: 1.1vw;
+    margin-right: 3.6vw;
+    
 }
 
 .slider__img{
@@ -438,8 +439,8 @@ background-color: rgb(255, 255, 255);
     border-radius: 1vw;  
     display:block;
     object-fit: cover;
-    margin-left: 2.73vw;
-    margin-right: 2.73vw; 
+    margin-left: 1.1vw;
+    margin-right: 3.6vw;
 }
 
 .slider__img2{
@@ -512,6 +513,19 @@ background-color: rgb(255, 255, 255);
     gap: 1vw;
 }
 
+.slider__section3 a{
+    max-width: 100%;
+    width: 16.02vw;
+    height: 15vw;
+    max-height: 100%;
+    margin-top: 1%;
+    border-radius: 1vw;  
+    display:block;
+    object-fit: cover;
+    margin-left: 1.1vw;
+    margin-right: 3.6vw;
+}
+
 .slider__img3{
     max-width: 100%;
     width: 16.02vw;
@@ -582,6 +596,19 @@ background-color: rgb(255, 255, 255);
     gap: 1vw;
 }
 
+.slider__section4 a{
+    max-width: 100%;
+    width: 16.02vw;
+    height: 15vw;
+    max-height: 100%;
+    margin-top: 1%;
+    border-radius: 1vw;  
+    display:block;
+    object-fit: cover;
+    margin-left: 1.1vw;
+    margin-right: 3.6vw;
+}
+
 .slider__img4{
     max-width: 100%;
     width: 16.02vw;
@@ -622,8 +649,20 @@ background-color: rgb(255, 255, 255);
 /*Slider juegos Fin*/
 
 .footer{
-    margin-bottom: 4vw;
+    margin-bottom: 9vw;
 }
+
+/*go top*/
+
+.top__container{
+    position: fixed;
+    bottom: 2vw;
+    right: 2vw;
+    width: 4vw;
+    height: 4vw;
+    z-index: -1;
+}
+
 /* login */
 
 #user__login{
@@ -737,7 +776,7 @@ hr{
     background-color: rgba(116, 115, 115, 0.3);
     margin-left: 4vw;
     margin-top: 2vw;
-    width: 30vw;
+    width: 30vw;    
     height: 10vw;
 }
 
