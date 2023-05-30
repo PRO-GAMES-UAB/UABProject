@@ -346,6 +346,19 @@ background-color: rgb(255, 255, 255);
     gap: 1vw;
 }
 
+.slider__section a{
+    max-width: 100%;
+    width: 16.02vw;
+    height: 15vw;
+    max-height: 100%;
+    margin-top: 1%;
+    border-radius: 1vw;  
+    display:block;
+    object-fit: cover;
+    margin-left: 2.73vw;
+    margin-right: 2.73vw; 
+}
+
 .slider__img{
     max-width: 100%;
     width: 16.02vw;
@@ -414,6 +427,19 @@ background-color: rgb(255, 255, 255);
     width: 100%;
     display: flex;
     gap: 1vw;
+}
+
+.slider__section2 a{
+    max-width: 100%;
+    width: 16.02vw;
+    height: 15vw;
+    max-height: 100%;
+    margin-top: 1%;
+    border-radius: 1vw;  
+    display:block;
+    object-fit: cover;
+    margin-left: 2.73vw;
+    margin-right: 2.73vw; 
 }
 
 .slider__img2{
@@ -520,6 +546,76 @@ background-color: rgb(255, 255, 255);
 }
 
 .slider__retroceder-img3{
+    right:94%;
+}
+
+/*slider4*/
+
+.contenedor-slider4{
+    width: 90%;
+    height: 17vw;
+    margin-top: 1vw;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: auto;
+    border: 2%;
+    border-radius: 1%;
+    box-shadow: 10px 10px 10px 0px
+                rgb(0, 0, 0, .5);
+    /*box-shadow: 0 0 0 10px,
+                0 10px 25px;*/
+    position: relative;
+    background-color:rgba(255, 255, 255);
+}
+
+.slider4{
+    display: flex;
+    width: 450%;
+    height: 16vw;
+    margin-left: -112.4%;
+    
+}
+
+.slider__section4{
+    width: 100%;
+    display: flex;
+    gap: 1vw;
+}
+
+.slider__img4{
+    max-width: 100%;
+    width: 16.02vw;
+    height: 15vw;
+    max-height: 100%;
+    margin-top: 1.2%;
+    border-radius: 1vw;  
+    display:block;
+    object-fit: cover;
+    margin-left: 2.73vw;
+    margin-right: 2.73vw;
+}
+
+.slider__btn4 img{
+    position: absolute;
+    width: 4.5vw;
+    height: 4.5vw;
+    background: rgba(255, 255, 255, .7);
+    top: 38%;
+    border-radius: 50%;
+    cursor: pointer;
+    transform: rotateY(-38%);
+}
+
+.slider__btn4 img:hover{
+    background-color:none;
+    transform: scale(1.1);
+}
+
+.slider__pasar-img4{
+    left: 94%;
+}
+
+.slider__retroceder-img4{
     right:94%;
 }
 
