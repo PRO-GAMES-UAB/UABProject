@@ -60,6 +60,10 @@ slider__botonLeft.addEventListener('click', function(){
     slider__prev();
 });
 
+setInterval(function(){
+    slider__next();
+}, 7000);
+
 //slider 2
 
 const slider2 = document.querySelector("#slider2");
@@ -102,6 +106,54 @@ slider__botonLeft2.addEventListener('click', function(){
     slider__prev2();
 });
 
+setInterval(function(){
+    slider__next2();
+}, 7000);
 
 
+//slider 3
+
+const slider3 = document.querySelector("#slider3");
+let slider__section3 = document.querySelectorAll(".slider__section3");
+let slider__sectionLast3 = slider__section3[slider__section3.length-1];
+
+const slider__botonLeft3 = document.querySelector("#slider__btn-left3");
+const slider__botonRight3 = document.querySelector("#slider__btn-right3");
+
+slider3.insertAdjacentElement('afterbegin', slider__sectionLast3);
+
+function slider__next3(){
+    let slider__sectionFirst3 = document.querySelectorAll(".slider__section3")[0];
+    slider3.style.marginLeft = "-224.9%";
+    slider3.style.transition = "all 0.5s";
+    setTimeout(function(){
+        slider3.style.transition = "none";
+        slider3.insertAdjacentElement('beforeend', slider__sectionFirst3)
+        slider3.style.marginLeft = "-112.4%";  
+    }, 500);
+}
+
+slider__botonRight3.addEventListener('click', function(){
+    slider__next3();
+});
+
+function slider__prev3(){
+    let slider__section3 = document.querySelectorAll(".slider__section3");
+    let slider__sectionLast3 = slider__section3[slider__section3.length-1];
+    slider3.style.marginLeft = "0";
+    slider3.style.transition = "all 0.5s";
+    setTimeout(function(){
+        slider3.style.transition = "none";
+        slider3.insertAdjacentElement('afterbegin', slider__sectionLast3);
+        slider3.style.marginLeft = "-112.4%";      
+    }, 500);
+}
+
+slider__botonLeft3.addEventListener('click', function(){
+    slider__prev3();
+});
+
+setInterval(function(){
+    slider__next3();
+}, 7000);
 
