@@ -202,3 +202,21 @@ slider__botonLeft4.addEventListener('click', function(){
 setInterval(function(){
     slider__next4();
 }, 7000);
+
+
+window.onscroll = function(){
+    if(document.documentElement.scrollTop > 100){
+        document.querySelector('.top__container')
+        .classList.add('show');
+    }else{
+        document.querySelector('.top__container')
+        .classList.remove('show'); 
+    }
+}
+
+document.querySelector('.top__container').addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    })
+})

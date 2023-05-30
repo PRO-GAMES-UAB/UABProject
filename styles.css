@@ -230,11 +230,11 @@ background-color: rgb(255, 255, 255);
 }
 
 .contenedor-botones{
-    margin-left: 2vw;
+    margin-left: 3vw;
 }
 
 .botones-cat{
-    width: 5vw;
+    width: 6vw;
     height: 2vw;
     margin-top: 1vw;
     margin-right: 0.5vw;
@@ -648,7 +648,7 @@ background-color: rgb(255, 255, 255);
 /*Slider juegos Fin*/
 
 .footer{
-    margin-bottom: 9vw;
+    margin-bottom: 7vw;
 }
 
 /*go top*/
@@ -662,7 +662,64 @@ background-color: rgb(255, 255, 255);
     z-index: -1;
 }
 
+.top__button{
+    width: 0;
+    height: 0;
+    background:#1c1c1c;
+    border-radius: 50%;
+    cursor: pointer;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.top__button img{
+    position: absolute;
+    font-size: 2vw;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: .2s;
+}
+
+.show{
+    z-index: 10;
+}
+
+.show .top__button{
+    animation: popup .3s ease-in-out;
+    width: 3.3vw;
+    height: 3.3vw;
+    z-index: 11;
+}
+
+.show img{
+    transform: translate(-50%, -50%) scale(1); 
+}
+
+@keyframes popup{
+    0%{
+        width: 0vw;
+        height: 0vw;
+    }
+
+    50%{
+        width: 4vw;
+        height: 4vw;
+    }
+
+    100%{
+        width: 3.3vw;
+        height: 3.3vw;
+    }
+}
 /* login */
+
+#cabecera__login{
+    width: 100%;
+    height: 7vw;
+}
 
 #user__login{
     display: block;
@@ -670,18 +727,23 @@ background-color: rgb(255, 255, 255);
     padding: 2vw;
     background-color: rgb(255, 38, 27);
     width: 22.4vw;
-    height: 28vw;
+    height: 31vw;
     border-radius: 25px;
     border-color:black;
     font-size: 1vw;
     color: black;
     margin-top: 5%;
     border: none;
-} 
+}
+
+#user__login img{
+    margin-left: 7.8vw;
+    margin-right: 7vw;
+}
 
 .titulo-input{
     color: #171720;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
 }
 
 .inputs{
@@ -693,7 +755,7 @@ background-color: rgb(255, 255, 255);
     border-radius: 0.5vw;
     text-align: center;
     color: white;
-    font-size: 22px;
+    font-size: 1.5vw;
     color-scheme: white;
 }
 
@@ -708,7 +770,8 @@ background-color: rgb(255, 255, 255);
     padding: 1vw 4vw;
     border: none;
     margin-top: 2vw;
-    margin-left: 4.7vw;
+    margin-left: 3.8vw;
+    margin-right: 4vw;
     background-color:#212331;
     border-radius: 0.5vw;
     color: red;
@@ -805,19 +868,20 @@ hr{
 
 .titulo-compra{
     margin-top: 2vw;
-    margin-left: 2vw;
+    position: absolute;
+    margin-left: 1vw;
     text-align: center;
 }
 
 #precio-juego{
-    margin-top: 2vw;
-    margin-left: 2vw;
+    margin-top: 6vw;
+    margin-left: 1vw;
 }
 
 .boton-carrito{
     display: flex;
     justify-content: center;
-    margin-top: 1.3vw;
+    margin-top: 5.5vw;
     margin-left: 1vw;
     width: 4vw;
     height: 3vw;
@@ -831,12 +895,14 @@ hr{
 }
 
 .boton-compra{
-    margin-top: 1.3vw;
+    margin-top: 5.3vw;
     margin-left: 1vw;
+    margin-right: 1vw;
     width: 10vw;
     height: 3vw ;
     background-color: darkgray;
     border: none;
+    border-radius: 5%;
     font-size: 1vw;
     font-weight: bold;
 }
@@ -960,6 +1026,11 @@ hr{
     height: 26.5vw;
     cursor: pointer;
     object-fit:fill;
+    border-radius: 5%;
+}
+
+.img-juegos-2:hover{
+    transform: scale(1.05);
 }
 
 .juegos{
