@@ -654,7 +654,86 @@ background-color: rgb(255, 255, 255);
 /*Slider juegos Fin*/
 
 .footer{
-    margin-bottom: 7vw;
+    margin-top: 6vw;
+    background-color: #1c1c1c;
+    height: 15vw;
+    display: flex;
+}
+
+.primer-contenedor{
+    display: flex;
+    width: 50vw;
+}
+
+.segundo-contenedor{
+    width: 30vw;
+    margin-left: 20vw;
+}
+
+.tercer-contenedor{
+    overflow: hidden;
+    width: 100%;
+}
+
+.texto-footer{
+    font-size: 1vw;
+    color: white;
+    width: 20vw;
+}
+
+#img-footer{
+    margin-top: 1vw;
+    margin-left: 1vw;
+    width: 4vw;
+    height: 3vw;
+}
+
+#titulo-footer{
+    margin-top: 2vw;
+    margin-left: 1vw;
+    color: white;
+}
+
+.titulos-footer{
+    color: white;
+    margin-top: 2vw;
+    margin-right: 50vw;
+    margin-bottom: 1vw;
+}
+
+.contenedor-links{
+    margin-top: 1vw;
+}
+
+.linea-foot{
+    position: absolute;
+    width: 20vw;
+    margin-bottom: 2vw;
+}
+
+#primer-link{
+    margin-right: 56.3vw;
+    color: white;
+    font-size: 1vw;
+}
+
+#segundo-link{
+    margin-right: 56vw;
+    color: white;
+    font-size: 1vw;
+}
+
+#tercer-link{
+    margin-right: 58vw;
+    color: white;
+    font-size: 1vw;
+}
+
+
+.links{
+    margin-right: 57vw;
+    color: white;
+    font-size: 1vw;
 }
 
 /*go top*/
