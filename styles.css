@@ -213,7 +213,7 @@ background-color: rgb(255, 255, 255);
 .descripcion-juego{
     margin-top: 3vw;
     width: 30vw;
-    height: 35vw;
+    height: 40vw;
     margin-right: 2vw;
     background-color: rgba(116, 115, 115, 0.3);
 }
@@ -313,7 +313,10 @@ background-color: rgb(255, 255, 255);
     text-align: initial;
     margin-top: 7vw;
     margin-bottom: 2vw;
+}
 
+.titulo__fila-juegos a{
+    color: black;
 }
 
 .titulo__fila-juegos h2{
@@ -679,6 +682,7 @@ background-color: rgb(255, 255, 255);
     font-size: 1vw;
     color: white;
     width: 20vw;
+    text-align: justify;
 }
 
 #img-footer{
@@ -715,18 +719,22 @@ background-color: rgb(255, 255, 255);
     margin-right: 56.3vw;
     color: white;
     font-size: 1vw;
+    text-align: justify;
 }
 
 #segundo-link{
     margin-right: 56vw;
     color: white;
     font-size: 1vw;
+    text-align: justify;
 }
 
 #tercer-link{
     margin-right: 58vw;
     color: white;
     font-size: 1vw;
+    text-align: justify;
+
 }
 
 
@@ -750,7 +758,7 @@ background-color: rgb(255, 255, 255);
 .top__button{
     width: 0;
     height: 0;
-    background:#1c1c1c;
+    background:#5f4e4e;
     border-radius: 50%;
     cursor: pointer;
     top: 50%;

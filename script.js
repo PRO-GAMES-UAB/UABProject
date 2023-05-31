@@ -205,7 +205,7 @@ setInterval(function(){
 
 
 window.onscroll = function(){
-    if(document.documentElement.scrollTop > 100){
+    if(document.documentElement.scrollTop > 200){
         document.querySelector('.top__container')
         .classList.add('show');
     }else{
