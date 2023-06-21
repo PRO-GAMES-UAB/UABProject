@@ -1,0 +1,35 @@
+[{
+  "_id": {
+    "$oid": "648fb03f972a89b3eeac8b1e"
+  },
+  "Email": "GustavoA@ProGames.com",
+  "Contraseña": "GusArias23"
+},
+{
+  "_id": {
+    "$oid": "648fb06e972a89b3eeac8b20"
+  },
+  "Email": "SantiagoDu@ProGames.com",
+  "Contraseña": "SanDuque18"
+},
+{
+  "_id": {
+    "$oid": "648fb08b972a89b3eeac8b22"
+  },
+  "Email": "DonaldoR@ProGames.com",
+  "Contraseña": "DonRivera77"
+},
+{
+  "_id": {
+    "$oid": "648fb0ae972a89b3eeac8b24"
+  },
+  "Email": "EmAngulo@ProGames.com",
+  "Contraseña": "Emanuel18"
+},
+{
+  "_id": {
+    "$oid": "648fb0cc972a89b3eeac8b26"
+  },
+  "Email": "CarlosO@ProGames.com",
+  "Contraseña": "CarOrozco19"
+}]

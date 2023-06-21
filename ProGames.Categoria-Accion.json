@@ -1,0 +1,80 @@
+[{
+  "_id": {
+    "$oid": "648f37a6642aac9bbbedbf2a"
+  },
+  "Nom_Juego": "ARK: Survival Evolved",
+  "Peso": "60 GB de almacenamiento",
+  "Precio": 60900
+},
+{
+  "_id": {
+    "$oid": "648f3851642aac9bbbedbf2e"
+  },
+  "Nom_Juego": "God Of War Ragnarok",
+  "Peso": "70 GB de almacenamiento",
+  "Precio": "Gratis"
+},
+{
+  "_id": {
+    "$oid": "648f3890642aac9bbbedbf30"
+  },
+  "Nom_Juego": "HELLO NEIGHBOR",
+  "Peso": "100 GB de almacenamiento",
+  "Precio": 14000
+},
+{
+  "_id": {
+    "$oid": "648f3972642aac9bbbedbf34"
+  },
+  "Nom_Juego": "Lost Light",
+  "Peso": "10 GB de almacenamiento",
+  "Precio": "Gratis"
+},
+{
+  "_id": {
+    "$oid": "648f39d5642aac9bbbedbf36"
+  },
+  "Nom_Juego": "Red Dead Redemption 2",
+  "Peso": "150 GB de almacenamiento",
+  "Precio": 399999
+},
+{
+  "_id": {
+    "$oid": "648f3a74642aac9bbbedbf3a"
+  },
+  "Nom_Juego": "GTA V",
+  "Peso": "72 GB de almacenamiento",
+  "Precio": 52309
+},
+{
+  "_id": {
+    "$oid": "648f3afb642aac9bbbedbf3d"
+  },
+  "Nom_Juego": "Resident Evil 7 Biohazard",
+  "Peso": "24 GB de almacenamiento",
+  "Precio": 99900
+},
+{
+  "_id": {
+    "$oid": "648f3b6b642aac9bbbedbf3f"
+  },
+  "Nom_Juego": "Stalcraft",
+  "Peso": "20 GB de almacenamiento",
+  "Precio": "Gratis"
+},
+{
+  "_id": {
+    "$oid": "648f3c68642aac9bbbedbf43"
+  },
+  "Nom_Juego": "Valorant",
+  "Peso": "24 GB de almacenamiento",
+  "Precio": "Gratis"
+},
+{
+  "_id": {
+    "$oid": "648f3ca0642aac9bbbedbf45"
+  },
+  "Nom_Juego": "Call of Duty: Modern Warfare 2",
+  "Peso": "125 GB de almacenamiento",
+  "Precio": 249999
+}]

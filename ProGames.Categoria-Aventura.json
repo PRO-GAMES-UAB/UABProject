@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "648f3890642aac9bbbedbf30"
+  },
+  "Nom_Juego": "HELLO NEIGHBOR",
+  "Peso": "100 GB de almacenamiento",
+  "Precio": 14000
+},
+{
+  "_id": {
+    "$oid": "648f3972642aac9bbbedbf34"
+  },
+  "Nom_Juego": "Lost Light",
+  "Peso": "10 GB de almacenamiento",
+  "Precio": "Gratis"
+},
+{
+  "_id": {
+    "$oid": "648f39d5642aac9bbbedbf36"
+  },
+  "Nom_Juego": "Red Dead Redemption 2",
+  "Peso": "150 GB de almacenamiento",
+  "Precio": 399999
+},
+{
+  "_id": {
+    "$oid": "648f3afb642aac9bbbedbf3d"
+  },
+  "Nom_Juego": "Resident Evil 7 Biohazard",
+  "Peso": "24 GB de almacenamiento",
+  "Precio": 99900
+},
+{
+  "_id": {
+    "$oid": "648f3b6b642aac9bbbedbf3f"
+  },
+  "Nom_Juego": "Stalcraft",
+  "Peso": "20 GB de almacenamiento",
+  "Precio": "Gratis"
+},
+{
+  "_id": {
+    "$oid": "648f3e8e642aac9bbbedbf64"
+  },
+  "Nom_Juego": "Minecraft",
+  "Peso": "1 GB de almacenamiento",
+  "Precio": 100000
+}]

@@ -1,0 +1,16 @@
+[{
+  "_id": {
+    "$oid": "648f3d26642aac9bbbedbf48"
+  },
+  "Nom_Juego": "Fifa 2023",
+  "Peso": "100 GB de almacenamiento",
+  "Precio": 279999
+},
+{
+  "_id": {
+    "$oid": "648f3d66642aac9bbbedbf4a"
+  },
+  "Nom_Juego": "NBA 2K23",
+  "Peso": "110 GB de almacenamiento",
+  "Precio": 319999
+}]

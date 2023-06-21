@@ -1,0 +1,80 @@
+[{
+  "_id": {
+    "$oid": "648f3972642aac9bbbedbf34"
+  },
+  "Nom_Juego": "Lost Light",
+  "Peso": "10 GB de almacenamiento",
+  "Precio": "Gratis"
+},
+{
+  "_id": {
+    "$oid": "648f3d26642aac9bbbedbf48"
+  },
+  "Nom_Juego": "Fifa 2023",
+  "Peso": "100 GB de almacenamiento",
+  "Precio": 279999
+},
+{
+  "_id": {
+    "$oid": "648f3a74642aac9bbbedbf3a"
+  },
+  "Nom_Juego": "GTA V",
+  "Peso": "72 GB de almacenamiento",
+  "Precio": 52309
+},
+{
+  "_id": {
+    "$oid": "648f370a642aac9bbbedbf25"
+  },
+  "Nom_Juego": "League Of Legends",
+  "Peso": "16 GB de almacenamiento",
+  "Precio": "gratis"
+},
+{
+  "_id": {
+    "$oid": "648f3e8e642aac9bbbedbf64"
+  },
+  "Nom_Juego": "Minecraft",
+  "Peso": "1 GB de almacenamiento",
+  "Precio": 100000
+},
+{
+  "_id": {
+    "$oid": "648f3ca0642aac9bbbedbf45"
+  },
+  "Nom_Juego": "Call of Duty: Modern Warfare 2",
+  "Peso": "125 GB de almacenamiento",
+  "Precio": 249999
+},
+{
+  "_id": {
+    "$oid": "648f3c68642aac9bbbedbf43"
+  },
+  "Nom_Juego": "Valorant",
+  "Peso": "24 GB de almacenamiento",
+  "Precio": "Gratis"
+},
+{
+  "_id": {
+    "$oid": "648f3fd6642aac9bbbedbf7f"
+  },
+  "Nom_Juego": "Apex Legends",
+  "Peso": "56 GB de almacenamiento",
+  "Precio": "Gratis"
+},
+{
+  "_id": {
+    "$oid": "648f400b642aac9bbbedbf81"
+  },
+  "Nom_Juego": "Fortnite",
+  "Peso": "35.50 GB de almacenamiento",
+  "Precio": "Gratis"
+},
+{
+  "_id": {
+    "$oid": "648f4050642aac9bbbedbf83"
+  },
+  "Nom_Juego": "The Cycle: Frontier",
+  "Peso": "37 GB de almacenamiento",
+  "Precio": "Gratis"
+}]
