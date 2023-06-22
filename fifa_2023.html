@@ -9,6 +9,68 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="Partes y servicios/normalize0.css">
+    <style>
+        .carro-compras {
+            display: none;
+            position: fixed;
+            top: 7vw;
+            right: 9vw;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            font-family: 'Poppins';
+            z-index: 2;
+        }
+
+        .carro-compras h3 {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .carro-compras ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .carro-compras li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .carro-compras li span {
+            margin-left: 1vw;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 1vw 3vw;
+            border:none;
+            border-radius: 1vw;
+        }
+
+        .carro-compras .total {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .carro-lista{
+            margin-top: 1vw;
+        }
+
+        .total{
+            font-size: 1vw;
+        }
+
+        .carro-compras.carro-visible {
+        display: block; /* Mostrar el carrito de compras cuando se activa */
+        }
+
+        #titulo-car-compra{
+            margin-bottom: 1vw;
+            font-size: 1vw;
+        }
+</style>
     <title>PROGAMES</title>
 </head>
 <body>
