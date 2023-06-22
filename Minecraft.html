@@ -9,6 +9,68 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="Partes y servicios/normalize0.css">
+    <style>
+        .carro-compras {
+            display: none;
+            position: fixed;
+            top: 7vw;
+            right: 9vw;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            font-family: 'Poppins';
+            z-index: 2;
+        }
+
+        .carro-compras h3 {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .carro-compras ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .carro-compras li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        .carro-compras li span {
+            margin-left: 1vw;
+            cursor: pointer;
+            background-color: rgba(0, 0, 0, 0.3);
+            padding: 1vw 3vw;
+            border:none;
+            border-radius: 1vw;
+        }
+
+        .carro-compras .total {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .carro-lista{
+            margin-top: 1vw;
+        }
+
+        .total{
+            font-size: 1vw;
+        }
+
+        .carro-compras.carro-visible {
+        display: block; /* Mostrar el carrito de compras cuando se activa */
+        }
+
+        #titulo-car-compra{
+            margin-bottom: 1vw;
+            font-size: 1vw;
+        }
+</style>
     <title>PROGAMES</title>
 </head>
 <body>
@@ -32,7 +94,7 @@
             </div> -->
         </div>
         <a href="login.html" class="logos-header"><img src="icons/user-login.svg" alt=""></a>
-        <a href="#" class="logos-header"><img src="icons/carrito.svg" alt=""></a>
+        <a href="#" class="logos-header"><img src="icons/carrito.svg" alt="" id="icono-carrito"></a>
         <!-- <img src="icons/expandir.svg" alt="" id="expandir"> -->
         <div class="bars__menu" id="bars__menu">
             <span class="line1__bars-menu"></span>
@@ -140,5 +202,71 @@
     </div>
     <br><br><br><br><br><br>
     <script src="script.js"></script>
+    <script src="script.js"></script>
+
+    <div class="carro-compras">
+        <h1 id="titulo-car-compra">CARRO DE COMPRAS</h1>
+        <ul id="carro-lista"></ul>
+        <div class="total">Total: <span id="carro-total">0</span> COP</div>
+    </div>
+    <script>
+        const botonComprar = document.querySelector('.boton-compra');
+        const carroCompras = document.querySelector('.carro-compras');
+        const carroLista = document.getElementById('carro-lista');
+        const carroTotal = document.getElementById('carro-total');
+        const iconoCarrito = document.getElementById('icono-carrito');
+
+// Agregar evento de clic a la imagen del carrito
+iconoCarrito.addEventListener('click', () => {
+    carroCompras.classList.toggle('carro-visible');
+});
+
+        // Variables para el carro de compras
+        let carroItems = [];
+        let total = 0;
+
+        // Función para actualizar el carro de compras
+        function actualizarCarro() {
+            carroLista.innerHTML = '';
+            total = 0;
+
+            carroItems.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = item.nombre + ' - ' + item.precio + ' COP';
+
+                const eliminar = document.createElement('span');
+                eliminar.textContent = 'Eliminar';
+                eliminar.addEventListener('click', () => eliminarItem(item.id));
+
+                li.appendChild(eliminar);
+                carroLista.appendChild(li);
+
+                total += item.precio;
+            });
+
+            carroTotal.textContent = total;
+        }
+
+        // Función para añadir un artículo al carro
+        function añadirItem() {
+            const nombre = 'Minecraft';
+            const precio = "Gratis";
+            const id = Math.random().toString(36).substr(2, 9); // Generar un ID único
+
+            const item = { id, nombre, precio };
+            carroItems.push(item);
+
+            actualizarCarro();
+        }
+
+        // Función para eliminar un artículo del carro
+        function eliminarItem(id) {
+            carroItems = carroItems.filter(item => item.id !== id);
+            actualizarCarro();
+        }
+
+        // Evento para añadir un artículo al carro al hacer clic en el botón "Comprar Ahora"
+        botonComprar.addEventListener('click', añadirItem);
+    </script>
 </body>
 </html>
